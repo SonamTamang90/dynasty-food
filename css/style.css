@@ -17,23 +17,75 @@ body {
   color: #777;
   line-height: 1.7; }
 
+.container {
+  display: grid;
+  grid-template-rows: 8rem 80vh repeat(2, min-content) 40vw repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(14rem, 1fr) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.primary-menu__item {
+  display: inline-block; }
+  .primary-menu__item:not(:last-child) {
+    margin-right: 3rem; }
+
+.primary-menu__link:link, .primary-menu__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #545454; }
+
+.user-nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.user-nav__item:not(:last-child) {
+  margin-right: 1.5rem; }
+
+.user-nav__icon {
+  height: 2.3rem;
+  width: 2.3rem; }
+
+.user-nav__user {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%; }
+
+.about {
+  grid-column: center-start / center-end; }
+
 .categories {
-  background-color: lightgreen; }
+  background-color: lightgreen;
+  grid-column: center-start / center-end; }
 
 .footer {
-  background-color: #101d2c; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end; }
 
 .header {
-  background-color: lightblue; }
+  background-color: #fff;
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header__logo {
+    height: 6rem; }
 
 .hero {
-  background-color: lightcoral; }
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end; }
 
 .meals {
-  background-color: palevioletred; }
+  background-color: palevioletred;
+  grid-column: center-start / center-end; }
 
 .mobile {
-  background-color: orangered; }
+  background-color: orangered;
+  grid-column: full-start / full-end; }
 
 .subscription {
-  background-color: powderblue; }
+  background-color: powderblue;
+  grid-column: full-start / full-end; }

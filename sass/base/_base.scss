@@ -17,3 +17,9 @@ body {
     color: #777;
     line-height: 1.7;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem 80vh repeat(2, min-content) 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(14rem, 1fr) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}

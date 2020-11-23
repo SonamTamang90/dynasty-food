@@ -1,3 +1,6 @@
 .hero {
-    background-color: lightcoral;
-}
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: full-start / full-end;
+} 

@@ -1,3 +1,17 @@
 .header {
-    background-color: lightblue;
-}
+    background-color: $color-white;
+
+    grid-column: full-start / full-end;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    &__logo-box {
+
+    }
+
+    &__logo {
+        height: 6rem;
+    } 
+} 

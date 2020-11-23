@@ -1,13 +1,17 @@
 @import "abstracts/variables";
 
 @import "base/base";
-@import "base/typography";   
+@import "base/typography";  
 
 
+@import "components/primary-menu";
+@import "components/user-nav";
+
+@import "layouts/about";
 @import "layouts/categories";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/hero";
 @import "layouts/meals";
-@import "layouts/mobile";  
-@import "layouts/subscription";
+@import "layouts/mobile";   
+@import "layouts/subscription"; 

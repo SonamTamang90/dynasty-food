@@ -1,0 +1,26 @@
+.primary-menu {
+
+    &__list {
+
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: $color-dark-grey;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.7; }
+
+.categories {
+  background-color: lightgreen; }
+
+.footer {
+  background-color: #101d2c; }
+
+.header {
+  background-color: lightblue; }
+
+.hero {
+  background-color: lightcoral; }
+
+.meals {
+  background-color: palevioletred; }
+
+.mobile {
+  background-color: orangered; }
+
+.subscription {
+  background-color: powderblue; }

@@ -129,6 +129,11 @@ body {
 .about {
   grid-column: center-start / center-end;
   padding: 8rem 0; }
+  .about__text {
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center; }
 
 .categories {
   background-color: lightgreen;

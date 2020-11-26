@@ -1,10 +1,10 @@
 .header {
-    background-color: $color-white;
+    background-color: rgba($color-white, .7);
     margin-top: 3rem;
-    padding: 4rem 0; 
+    padding: 4rem 0;  
     border-radius: .3rem;
     grid-column: center-start / center-end;
-     z-index: 1000;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,8 +12,8 @@
     &__logo-box {
 
     } 
-
+   
     &__logo {
         height: 6rem;
     } 
-} 
+}              

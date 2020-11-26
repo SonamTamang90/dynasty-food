@@ -2,35 +2,35 @@
     background-color: #f2f2f2;
     grid-column: full-start / full-end; 
 
-    display: flex;
-    justify-content: center;
-
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
 
     &__img-box {
-        position: relative;
+       overflow: hidden;
+       margin-left: -22rem;
+       margin-right: -21rem; 
     }
 
     &__img {
-        height: 80rem;
+        display: inline-block;
+        height: 50rem; 
     }
 
     &__features {
-
-        &-1 {
-            position: absolute;
-            top: 28%; 
-            left: -15rem;
-        }
-      
-
-        &-2 {
-            position: absolute;
-            top: 28%;
-            right: -23rem;
-        }
-
        display: flex;
        flex-direction: column;
+       
+       &-1 {
+           margin-left: 9rem;
+       }
+
+       &-2 {
+
+       }
     }
 
     &__feature {

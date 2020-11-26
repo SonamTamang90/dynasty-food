@@ -72,7 +72,7 @@ body {
 
 .heading-4 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   display: flex;
   align-items: center; }
@@ -236,24 +236,24 @@ body {
 
 .mobile {
   background-color: #f2f2f2;
-  grid-column: full-start / full-end;
-  display: flex;
-  justify-content: center; }
+  grid-column: full-start / full-end; }
+  .mobile__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; }
   .mobile__img-box {
-    position: relative; }
+    overflow: hidden;
+    margin-left: -22rem;
+    margin-right: -21rem; }
   .mobile__img {
-    height: 80rem; }
+    display: inline-block;
+    height: 50rem; }
   .mobile__features {
     display: flex;
     flex-direction: column; }
     .mobile__features-1 {
-      position: absolute;
-      top: 28%;
-      left: -15rem; }
-    .mobile__features-2 {
-      position: absolute;
-      top: 28%;
-      right: -23rem; }
+      margin-left: 9rem; }
   .mobile__feature:not(:last-child) {
     margin-bottom: 3rem; }
   .mobile__feature-text {

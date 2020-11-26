@@ -244,8 +244,8 @@ body {
     justify-items: center; }
   .mobile__img-box {
     overflow: hidden;
-    margin-left: -22rem;
-    margin-right: -21rem; }
+    margin-right: 3rem;
+    margin-left: 3rem; }
   .mobile__img {
     display: inline-block;
     height: 50rem; }
@@ -253,7 +253,9 @@ body {
     display: flex;
     flex-direction: column; }
     .mobile__features-1 {
-      margin-left: 9rem; }
+      margin-right: 3rem; }
+    .mobile__features-2 {
+      margin-left: 3rem; }
   .mobile__feature:not(:last-child) {
     margin-bottom: 3rem; }
   .mobile__feature-text {

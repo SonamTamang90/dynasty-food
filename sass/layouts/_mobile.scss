@@ -7,14 +7,40 @@
 
 
     &__img-box {
-
+        position: relative;
     }
 
     &__img {
         height: 80rem;
     }
 
-    &__feature {
-       
+    &__features {
+
+        &-1 {
+            position: absolute;
+            top: 28%; 
+            left: -15rem;
+        }
+      
+
+        &-2 {
+            position: absolute;
+            top: 28%;
+            right: -23rem;
+        }
+
+       display: flex;
+       flex-direction: column;
     }
-}
+
+    &__feature {
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        &-text {
+            font-size: 1.5rem;
+            padding-left: 6rem;
+        }
+    }
+}  

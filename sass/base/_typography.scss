@@ -6,6 +6,19 @@
     font-size: 8rem;   
     color: #fff;
     text-transform: uppercase;
+
+  
+    @include respond(bp-large) {
+       font-size: 6rem;
+       letter-spacing: .1rem;  
+    } 
+
+        
+    @include respond(bp-small) {
+        font-size: 6rem;
+    }  
+
+
 }
 
 .heading-2 {
@@ -22,6 +35,10 @@
         color: #fff;
         font-size: 2.8rem; 
         letter-spacing: .3rem; 
+
+        @include respond(bp-large) {
+            font-size: 2rem;
+        }  
     }
 
     &-black {
@@ -30,3 +47,34 @@
         text-align: center; 
     }
 }  
+
+.heading-4 {
+    font-family: $heading-font;
+    font-size: 2rem;
+    text-transform: uppercase; 
+
+    display: flex;
+    align-items: center;
+
+  
+ 
+    span {
+        display: inline-block;
+        font-size: 3rem; 
+        color: #fff;
+        height: 4rem;
+        width: 4rem;
+        border: 2px solid $color-primary; 
+        border-radius: 50%;
+        text-align: center;
+        background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+
+        display: flex; 
+        align-items: center;
+        justify-items: center;  
+        justify-content: center;
+        margin-right: 2rem; 
+        padding-bottom: 1rem;
+    }
+          
+}   

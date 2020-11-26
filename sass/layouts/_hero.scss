@@ -3,7 +3,9 @@
     background-size: cover;
     background-position: center;
     grid-column: full-start / full-end;
-    margin-top: -10vh;
+    // margin-top: -10vh;
+    position: relative;
+    
 
     &__text-box {
         position: absolute;
@@ -12,4 +14,5 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
-} 
+    
+}  

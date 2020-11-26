@@ -42,6 +42,13 @@ body {
   font-size: 8rem;
   color: #fff;
   text-transform: uppercase; }
+  @media (max-width: 62.5em) {
+    .heading-1 {
+      font-size: 6rem;
+      letter-spacing: .1rem; } }
+  @media (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 6rem; } }
 
 .heading-2 {
   font-size: 3rem;
@@ -55,10 +62,36 @@ body {
     color: #fff;
     font-size: 2.8rem;
     letter-spacing: .3rem; }
+    @media (max-width: 62.5em) {
+      .heading-3-white {
+        font-size: 2rem; } }
   .heading-3-black {
     font-size: 1.8rem;
     color: #555;
     text-align: center; }
+
+.heading-4 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+  .heading-4 span {
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid #e02728;
+    border-radius: 50%;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #e02728, #7E1842);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    padding-bottom: 1rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -175,10 +208,8 @@ body {
 
 .header {
   background-color: rgba(255, 255, 255, 0.9);
-  margin-top: 3rem;
-  padding: 4rem 0;
   border-radius: .3rem;
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
   z-index: 1000;
   display: flex;
   justify-content: space-around;
@@ -191,7 +222,7 @@ body {
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
-  margin-top: -10vh; }
+  position: relative; }
   .hero__text-box {
     position: absolute;
     top: 50%;
@@ -208,8 +239,26 @@ body {
   grid-column: full-start / full-end;
   display: flex;
   justify-content: center; }
+  .mobile__img-box {
+    position: relative; }
   .mobile__img {
     height: 80rem; }
+  .mobile__features {
+    display: flex;
+    flex-direction: column; }
+    .mobile__features-1 {
+      position: absolute;
+      top: 28%;
+      left: -15rem; }
+    .mobile__features-2 {
+      position: absolute;
+      top: 28%;
+      right: -23rem; }
+  .mobile__feature:not(:last-child) {
+    margin-bottom: 3rem; }
+  .mobile__feature-text {
+    font-size: 1.5rem;
+    padding-left: 6rem; }
 
 .subscription {
   background-color: powderblue;

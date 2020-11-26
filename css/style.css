@@ -50,10 +50,15 @@ body {
 
 .heading-3 {
   font-family: "Playfair Display", serif;
-  font-size: 2.8rem;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: .3rem; }
+  text-transform: uppercase; }
+  .heading-3-white {
+    color: #fff;
+    font-size: 2.8rem;
+    letter-spacing: .3rem; }
+  .heading-3-black {
+    font-size: 1.8rem;
+    color: #555;
+    text-align: center; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -61,6 +66,16 @@ body {
 
 .btn--primary {
   padding: 1.8rem 4rem;
+  background-image: linear-gradient(to right bottom, #e02728, #7E1842);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  outline: 1px solid #fff;
+  outline-offset: -1rem;
+  border-radius: .3rem; }
+
+.btn--discover {
+  padding: 1.8rem 3.5rem;
   background-image: linear-gradient(to right bottom, #e02728, #7E1842);
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -127,8 +142,10 @@ body {
   border-radius: 50%; }
 
 .about {
-  grid-column: center-start / center-end;
-  padding: 8rem 0; }
+  background-color: #f7f7f7;
+  grid-column: full-start / full-end;
+  padding: 8rem 0;
+  z-index: -2; }
   .about__text {
     font-size: 1.5rem;
     width: 50%;
@@ -136,15 +153,28 @@ body {
     text-align: center; }
 
 .categories {
-  background-color: lightgreen;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  padding: 8rem 0; }
+  .categories__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2.8rem; }
+  .categories__cta {
+    margin-top: 6rem;
+    text-align: center; }
+
+.category {
+  border: 1px solid #dad6d6;
+  border-radius: .3rem; }
+  .category__img {
+    width: 100%; }
 
 .footer {
   background-color: #101d2c;
   grid-column: full-start / full-end; }
 
 .header {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   margin-top: 3rem;
   padding: 4rem 0;
   border-radius: .3rem;

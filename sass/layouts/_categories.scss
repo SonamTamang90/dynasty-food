@@ -1,4 +1,24 @@
-.categories {
-    background-color: lightgreen;
+.categories { 
     grid-column: center-start / center-end;
+    padding: 8rem 0;
+
+    &__container {
+        display:  grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-gap: 2.8rem; 
+    }
+
+    &__cta {
+        margin-top: 6rem;
+        text-align: center;
+    }
+}  
+
+.category {
+    border: 1px solid #dad6d6;
+    border-radius: .3rem;
+
+    &__img {
+        width: 100%;
+    }
 }

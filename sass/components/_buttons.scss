@@ -15,4 +15,16 @@
         outline-offset: -1rem;
         border-radius: .3rem;
     }
+
+    
+    &--discover {
+        padding: 1.8rem 3.5rem;
+        background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+        font-size: 1.5rem; 
+        text-transform: uppercase;
+        color: #fff; 
+        outline: 1px solid #fff;
+        outline-offset: -1rem;
+        border-radius: .3rem;
+    }
 }

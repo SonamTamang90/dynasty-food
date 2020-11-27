@@ -92,6 +92,10 @@ body {
     justify-content: center;
     margin-right: 2rem;
     padding-bottom: 1rem; }
+  .heading-4-left {
+    text-align: left;
+    margin-left: -13rem;
+    margin-bottom: 2rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -236,7 +240,8 @@ body {
 
 .mobile {
   background-color: #f2f2f2;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 8rem 0; }
   .mobile__container {
     display: flex;
     align-items: center;
@@ -256,11 +261,25 @@ body {
       margin-right: 3rem; }
     .mobile__features-2 {
       margin-left: 3rem; }
-  .mobile__feature:not(:last-child) {
+  .mobile__feature {
     margin-bottom: 3rem; }
-  .mobile__feature-text {
-    font-size: 1.5rem;
-    padding-left: 6rem; }
+    .mobile__feature-text {
+      font-size: 1.5rem;
+      padding-left: 6rem; }
+    .mobile__feature__cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mobile__feature__cta--buttons:link, .mobile__feature__cta--buttons:visited {
+        display: inline-block;
+        text-decoration: none; }
+      .mobile__feature__cta-img {
+        display: inline-block;
+        height: 5rem; }
+        .mobile__feature__cta-img-1 {
+          margin-right: .8rem;
+          margin-left: 3rem; }
 
 .subscription {
   background-color: powderblue;

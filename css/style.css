@@ -235,8 +235,19 @@ body {
     text-align: center; }
 
 .meals {
-  background-color: palevioletred;
+  padding: 8rem 0;
   grid-column: center-start / center-end; }
+  .meals__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 3rem;
+    margin-bottom: 3rem; }
+
+.meal__photo {
+  width: 100%; }
+
+.meal__price {
+  font-size: 2rem; }
 
 .mobile {
   background-color: #f2f2f2;
@@ -282,5 +293,24 @@ body {
           margin-left: 3rem; }
 
 .subscription {
-  background-color: powderblue;
-  grid-column: full-start / full-end; }
+  padding: 8rem 0;
+  background-color: #f2f2f2;
+  grid-column: full-start / full-end;
+  z-index: -8; }
+  .subscription__text {
+    font-size: 1.5rem;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .subscription__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; }
+  .subscription__input {
+    display: inline-block;
+    width: 50rem;
+    padding: 1.8rem 2rem;
+    border: 1px solid #dad6d6;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase; }

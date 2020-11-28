@@ -1,4 +1,31 @@
 .subscription {
-    background-color: powderblue;
+    padding: 8rem 0;
+    background-color: #f2f2f2;
     grid-column: full-start / full-end;
-}
+    z-index: -8;
+    
+
+    &__text {
+        font-size: 1.5rem;
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;    
+        margin-top: 3rem; 
+          
+    }
+
+    &__input {
+        display: inline-block;
+        width: 50rem;
+        padding: 1.8rem 2rem;
+        border: 1px solid #dad6d6;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+} 

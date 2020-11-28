@@ -1,4 +1,22 @@
 .meals {
-    background-color: palevioletred;
+    padding: 8rem 0;
     grid-column: center-start / center-end;
+
+    &__container {
+        display:  grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 3rem;  
+        margin-bottom: 3rem;
+    }
 }
+
+.meal {
+
+    &__photo { 
+        width: 100%;
+    }
+
+    &__price {
+        font-size: 2rem;
+    }
+}  

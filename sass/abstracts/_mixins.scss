@@ -27,9 +27,4 @@
         @media (max-width: 75em) { @content }    
     };
 
-     // 1200px - big desktop
-     @if $breakpoint == bp-xlargest {
-        @media (max-width: 75em) { @content }    
-    };
-
 }

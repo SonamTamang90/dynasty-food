@@ -11,12 +11,43 @@
 }
 
 .meal {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    &__photo-box {
+        position: relative;
+        overflow: hidden;
+    }
 
     &__photo { 
         width: 100%;
+        transition: transform .4s;
+        
     }
 
     &__price {
         font-size: 2rem;
+    }
+
+    // &__overlay {
+    //     display: none;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgba(0, 0, 0, .6);
+    //     z-index: 1000;
+    //     transition: display 4s;
+    // }
+
+    &:hover &__photo  { 
+        transform: scale(1.02);
+        filter: blur(.3rem);
+    }
+
+    &:hover &__overlay {
+        display: block;
     }
 }  
